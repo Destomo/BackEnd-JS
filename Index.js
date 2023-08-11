@@ -9,10 +9,12 @@ const requestListener = (req, res) => {
     if(url === '/index.html'){
             fs.readFile('./views/index.html', 'utf-8')
             .then((data) => {
-            res.end(data)
+                res.statusCode = 200;
+                res.end(data)
         })
         }
         else{
+            res.statusCode = 404;
             res.end();
         }
     }
