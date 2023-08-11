@@ -1,25 +1,10 @@
-const API_BASE = 'https://fakestoreapi.com/products';
-
-const product = {
-    title: 'Huawei MAde Me ProA+',
-    price: 1200,
-    description: 'none',
-    image: 'https://hotline.ua/img/tx/205/2055812195.jpg',
-    category: 'Phones',
-    rating: {
-        rate: '5.0',
-        count: '24'
+async function getValue() {
+    try{
+        const promiseResult = await fetch('https://fakestoreapi.com/products');
+        const data = await promiseResult.json();
+        console.log(data);
     }
-};
-
-const options = {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(product)
+    catch (error){
+        console.log(error);
+    }
 }
-
-fetch(API_BASE, options)
-.then((response) => response.json())
-.then((data) => console.log(data))
