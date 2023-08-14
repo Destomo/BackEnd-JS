@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Destomo/BackEnd-JS.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Destomo/BackEnd-JS/issues"
-  },
-  "homepage": "https://github.com/Destomo/BackEnd-JS#readme"
+  "license": "ISC"
 }
